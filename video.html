@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JavaScript Video Controls</title>
-	<script src = ""></script>
+	<script src="js/video.js"></script>
 	<style>
 	video{
 		width: 90%;
@@ -18,6 +18,14 @@
 	}
 
 	/*Use CSS before property to display the image before the text in the buttons*/
+	.play {
+		/* https://stackoverflow.com/questions/10829675/how-to-put-an-image-in-div-with-css */
+		content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0751ciOwPHBdltgEarHFb4OLtsi5X2p7VGrOs-edZ4ME9j9Bc&s");
+	}
+
+	.pause {
+
+	}
 	
 </style>
 </head>
@@ -33,11 +41,11 @@
 	
 
 	<figure>
-	<video id="myVideo">
-		<source src="assets/big_buck_bunny_480p_stereo.ogg" type="video/ogg" />
-		<!-- I do not have captions - it was causing an error that I could not fix. -->
-	  	Your browser does not support HTML5 video.
-	</video>
+		<video id="myVideo">
+			<source src="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg" />
+			  Your browser does not support HTML5 video.
+			  <!-- I do not have captions - it was causing an error that I could not fix. -->
+		</video>
 	<figcaption>[Dramatic music throughout but no speaking]</figcaption>
 </figure>
 
