@@ -18,15 +18,18 @@
 	}
 
 	/*Use CSS before property to display the image before the text in the buttons*/
-	.play {
+	.play::before {
 		/* https://stackoverflow.com/questions/10829675/how-to-put-an-image-in-div-with-css */
-		content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0751ciOwPHBdltgEarHFb4OLtsi5X2p7VGrOs-edZ4ME9j9Bc&s");
+		/* https://stackoverflow.com/questions/12082948/resize-the-content-propertys-image */
+		content:  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0751ciOwPHBdltgEarHFb4OLtsi5X2p7VGrOs-edZ4ME9j9Bc&s");
+		zoom: 40%;
 	}
 
-	.pause {
-
+	.pause::before {
+		content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ic_pause_circle_fill_48px.svg/768px-Ic_pause_circle_fill_48px.svg.png");
+		zoom: 10%;
 	}
-	
+
 </style>
 </head>
 <body onload = "getVid()"> 
